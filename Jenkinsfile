@@ -5,7 +5,7 @@
            SG_SECRET_KEY = credentials("SG_SECRET_KEY")
            registry = "https://registry.hub.docker.com"
        
-           dockerImage = 'dhouari/sg'
+           dockerImage = 'etcheby84/sg'
         }
   stages {
           
@@ -44,8 +44,8 @@
              
             steps {
 
-              sh 'docker build -t dhouari/sg .'
-              sh 'docker save dhouari/sg -o sg.tar'
+              sh 'docker build -t etcheby84/sg .'
+              sh 'docker save etcheby84/sg -o sg.tar'
               
              } 
            }
