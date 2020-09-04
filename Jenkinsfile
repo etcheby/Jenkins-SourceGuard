@@ -40,7 +40,7 @@
          }
            
            
-          stage('Docker image Build and scan prep') {
+          stage('Docker Image Build and Image Scan Prep') {
              
             steps {
 
@@ -58,7 +58,7 @@
                     sh './sourceguard-cli --img sg.tar'
                     } catch (Exception e) {
     
-                 echo "Image scanning is BLOCK and recommend not using the source code"  
+                 echo "Image scanning is BLOCKED and recommend not using the source code"  
                   }
                 }
               }
