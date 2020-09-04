@@ -5,7 +5,7 @@
            SG_SECRET_KEY = credentials("SG_SECRET_KEY")
            registry = "https://registry.hub.docker.com"
        
-           dockerImage = 'etcheby84/sg'
+           dockerImage = 'etcheby84/vulnerablewebapp'
         }
   stages {
           
@@ -44,8 +44,8 @@
              
             steps {
 
-              sh 'docker build -t etcheby84/sg .'
-              sh 'docker save etcheby84/sg -o sg.tar'
+              sh 'sudo docker build -t etcheby84/vulnerablewebapp .'
+              sh 'sudo docker save etcheby84/vulnerablewebapp -o vulnerablewebapp.tar'
               
              } 
            }
